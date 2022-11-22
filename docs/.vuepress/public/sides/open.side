@@ -1,0 +1,34 @@
+{
+  "id": "30cccfae-7b8d-4e70-93d3-b68cbf0f744f",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "77cca8b6-6113-4743-9930-d3e927247e7d",
+      "name": "open",
+      "commands": [
+        {
+          "id": "76663824-0441-472e-a04e-4fc6dc1fee50",
+          "semantics": "打开窗口 <span>/</span>",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "0a9a81da-1045-40b8-ac90-8892a603abfb",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["77cca8b6-6113-4743-9930-d3e927247e7d"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

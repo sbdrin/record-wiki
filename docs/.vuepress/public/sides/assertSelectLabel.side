@@ -1,0 +1,180 @@
+{
+  "id": "f2f5cb69-33a6-4fe7-9fc6-bf31f7ba2f11",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.w3school.com.cn/tiy/t.asp?f=eg_html_select",
+  "tests": [
+    {
+      "id": "9ecc2e08-7ea2-4356-b792-e54313cf883b",
+      "name": "assert select label",
+      "commands": [
+        {
+          "id": "7f3b5680-199c-4be9-a379-2478cfd4f23a",
+          "semantics": "打开窗口 <span>/tiy/t.asp?f=eg_html_select</span>",
+          "command": "open",
+          "target": "/tiy/t.asp?f=eg_html_select",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c81afa46-4b5c-4c53-a168-690df71f420b",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4ad6ab8e-638f-402b-b302-915edb3ebb03",
+          "semantics": "切换到内嵌页面，序号为 <span>0</span>",
+          "command": "selectFrame",
+          "target": "index=0",
+          "targets": [["index=0"]],
+          "value": ""
+        },
+        {
+          "id": "539941ed-7338-49c2-aedb-ba403a9adec1",
+          "semantics": "点击 <span>元素css=select</span>",
+          "command": "click",
+          "target": "css=select",
+          "targets": [
+            ["css=select", "css:finder"],
+            ["xpath=//body/select", "xpath:position"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "35981359-1ec7-41a0-b357-c29eed24d942",
+          "semantics": "",
+          "command": "select",
+          "target": "css=select",
+          "targets": [],
+          "value": "label=Saab"
+        },
+        {
+          "id": "fbda5a26-9005-4260-a034-c5b232d935d2",
+          "semantics": "点击 <span>元素css=select</span>",
+          "command": "click",
+          "target": "css=select",
+          "targets": [
+            ["css=select", "css:finder"],
+            ["xpath=//body/select", "xpath:position"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "79546167-c6f1-48db-8830-834c342e2e15",
+          "semantics": "断言 <span>元素css=select </span>的选中文本是否为 <span>Saab</span>",
+          "command": "assertSelectedLabel",
+          "target": "css=select",
+          "targets": [],
+          "value": "Saab"
+        },
+        {
+          "id": "c43a4cf6-ee63-4e8f-bb77-93902fc9d252",
+          "semantics": "点击 <span>元素css=select</span>",
+          "command": "click",
+          "target": "css=select",
+          "targets": [
+            ["css=select", "css:finder"],
+            ["xpath=//body/select", "xpath:position"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0c7d84e7-0c63-4fc4-a5b7-f5adde7e4288",
+          "semantics": "",
+          "command": "select",
+          "target": "css=select",
+          "targets": [],
+          "value": "label=Opel"
+        },
+        {
+          "id": "6bc6dcf5-e7ea-4fb2-a791-38ce02bc3146",
+          "semantics": "断言 <span>元素css=select </span>的选中文本是否为 <span>Opel</span>",
+          "command": "assertSelectedLabel",
+          "target": "css=select",
+          "targets": [],
+          "value": "Opel"
+        },
+        {
+          "id": "00aa44db-fd92-4b69-a08a-5c2851da5c76",
+          "semantics": "点击 <span>元素css=select</span>",
+          "command": "click",
+          "target": "css=select",
+          "targets": [
+            ["css=select", "css:finder"],
+            ["xpath=//body/select", "xpath:position"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "476bffef-97f1-47ee-8cd4-22892f2cb3df",
+          "semantics": "点击 <span>元素css=select</span>",
+          "command": "click",
+          "target": "css=select",
+          "targets": [
+            ["css=select", "css:finder"],
+            ["xpath=//body/select", "xpath:position"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "130e6a6a-3d28-4030-96ea-84bb521924dd",
+          "semantics": "",
+          "command": "select",
+          "target": "css=select",
+          "targets": [],
+          "value": "label=Audi"
+        },
+        {
+          "id": "b6b1de90-79ca-4214-9a08-d7ca3960f9b8",
+          "semantics": "点击 <span>元素css=select</span>",
+          "command": "click",
+          "target": "css=select",
+          "targets": [
+            ["css=select", "css:finder"],
+            ["xpath=//body/select", "xpath:position"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0bcfbaed-5335-4147-99be-9bf6bb762945",
+          "semantics": "断言 <span>元素css=select </span>的选中文本是否为 <span>Audi</span>",
+          "command": "assertSelectedLabel",
+          "target": "css=select",
+          "targets": [],
+          "value": "Audi"
+        },
+        {
+          "id": "5887993a-2496-4b1c-b886-393ed68b15b7",
+          "semantics": "断言 <span>元素css=select </span>的选中文本是否为 <span>Opel</span>",
+          "command": "assertSelectedLabel",
+          "target": "css=select",
+          "targets": [],
+          "value": "Opel"
+        },
+        {
+          "id": "db526e49-42d9-4f80-b677-69f548f54b7f",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "a5ba9a7d-ec38-4e8e-812a-0710a2a0a89b",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["9ecc2e08-7ea2-4356-b792-e54313cf883b"]
+    }
+  ],
+  "urls": ["https://www.w3school.com.cn/tiy/t.asp?f=eg_html_select"],
+  "plugins": []
+}

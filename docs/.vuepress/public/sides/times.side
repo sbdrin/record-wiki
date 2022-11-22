@@ -1,0 +1,98 @@
+{
+  "id": "d3b95af6-fa9a-4ead-b70f-e760920a915c",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "f2cb7737-4933-46ef-b820-3c43d9dfd490",
+      "name": "times",
+      "commands": [
+        {
+          "id": "7bb8a32d-4ce3-4948-89b5-468beea7525d",
+          "semantics": "打开窗口 <span>/</span>",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2132d7a9-5756-4eb6-be08-2ed4b8011cc3",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "77eb93ce-68d2-46ac-9e6d-9a4d1484f13d",
+          "semantics": "",
+          "command": "executeScript",
+          "target": "return  1",
+          "targets": [],
+          "value": "value"
+        },
+        {
+          "id": "993f2b37-169d-4127-ae66-b0c3caa90a1e",
+          "semantics": "",
+          "command": "times",
+          "target": "5",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fbd7525e-77a7-4606-ac1c-c66f88982f4b",
+          "semantics": "",
+          "command": "executeScript",
+          "target": "return ${value}+1 ",
+          "targets": [],
+          "value": "value"
+        },
+        {
+          "id": "13dfae62-c91c-496b-8c2a-d607903de2a4",
+          "semantics": "",
+          "command": "echo",
+          "target": "${value}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cd58f361-74c8-44cb-ab43-ae7c8f6bfddd",
+          "semantics": "",
+          "command": "end",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2a9a1d7f-8078-4ed2-8550-a881ecc5d9b0",
+          "semantics": "",
+          "command": "echo",
+          "target": "${value}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f443fa93-a961-45f3-b75c-cb6f19ab393b",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "9e92d209-5e63-491d-b827-6f10b8825227",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["f2cb7737-4933-46ef-b820-3c43d9dfd490"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

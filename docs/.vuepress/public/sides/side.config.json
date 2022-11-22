@@ -1,0 +1,274 @@
+{
+  "open": {
+    "path": "open.side",
+    "description": "this is a description for command open"
+  },
+  "for each": {
+    "path": "forEach.side",
+    "description": "this is a description for command for each"
+  },
+  "set window size": {
+    "path": "setWindowSize.side",
+    "description": "this is a description for command set window size"
+  },
+  "select window": {
+    "path": "selectWindow.side",
+    "description": "this is a description for command select window"
+  },
+  "select frame": {
+    "path": "assertChecked.side",
+    "description": "this is a description for command select frame"
+  },
+  "close": {
+    "path": "close.side",
+    "description": "this is a description for command close"
+  },
+  "type": {
+    "path": "type.side",
+    "description": "this is a description for command type"
+  },
+  "click": {
+    "path": "click.side",
+    "description": "this is a description for command click"
+  },
+  "double click": {
+    "path": "doubleClick.side",
+    "description": "this is a description for command double click"
+  },
+  "mouse over": {
+    "path": "mouseOver.side",
+    "description": "this is a description for command mouse over"
+  },
+  "mouse wheel": {
+    "path": "mouseWheel.side",
+    "description": "this is a description for command mouse wheel"
+  },
+  "select": {
+    "path": "assertSelectValue.side",
+    "description": "this is a description for command mouse select"
+  },
+  "echo": {
+    "path": "echo.side",
+    "description": "this is a description for command echo"
+  },
+  "pause": {
+    "path": "pause.side",
+    "description": "this is a description for command pause"
+  },
+  "debugger": {
+    "path": "debugger.side",
+    "description": "this is a description for command debugger"
+  },
+  "if": {
+    "path": "if.side",
+    "description": "this is a description for command if"
+  },
+  "if element present": {
+    "path": "ifElementPresent.side",
+    "description": "this is a description for command  element present"
+  },
+  "else": {
+    "path": "if.side",
+    "description": "this is a description for command else"
+  },
+  "else if": {
+    "path": "if.side",
+    "description": "this is a description for command else if "
+  },
+  "end": {
+    "path": "end.side",
+    "description": "this is a description for command end "
+  },
+  "do": {
+    "path": "do.side",
+    "description": "this is a description for command do "
+  },
+  "repeat if": {
+    "path": "do.side",
+    "description": "this is a description for command repeat if "
+  },
+  "times": {
+    "path": "times.side",
+    "description": "this is a description for command times"
+  },
+  "while": {
+    "path": "while.side",
+    "description": "this is a description for command while"
+  },
+  "set speed": {
+    "path": "setSpeed.side",
+    "description": "this is a description for command set speed"
+  },
+  "store": {
+    "path": "store.side",
+    "description": "this is a description for command store"
+  },
+  "store attribute": {
+    "path": "storeAttribute.side",
+    "description": "this is a description for command store attribute"
+  },
+  "store text": {
+    "path": "storeText.side",
+    "description": "this is a description for command store text"
+  },
+  "store title": {
+    "path": "storeTitle.side",
+    "description": "this is a description for command store title"
+  },
+  "store json": {
+    "path": "storeJson.side",
+    "description": "this is a description for command store json"
+  },
+  "store value": {
+    "path": "storeValue.side",
+    "description": "this is a description for command store value"
+  },
+  "store window handle": {
+    "path": "selectWindow.side",
+    "description": "this is a description for command store window handle"
+  },
+  "store xpath count": {
+    "path": "storeXpathCount.side",
+    "description": "this is a description for command store xpath count"
+  },
+  "assert": {
+    "path": "assert.side",
+    "description": "this is a description for command assert"
+  },
+  "assert checked": {
+    "path": "assertChecked.side",
+    "description": "this is a description for command assert checked"
+  },
+  "assert not checked": {
+    "path": "assertNotChecked.side",
+    "description": "this is a description for command assert not checked"
+  },
+  "assert editable": {
+    "path": "assertEditable.side",
+    "description": "this is a description for command assert editable"
+  },
+  "assert not editable": {
+    "path": "assertNotEditable.side",
+    "description": "this is a description for command assert not editable"
+  },
+  "assert element present": {
+    "path": "assertElementPresent.side",
+    "description": "this is a description for command assert element present"
+  },
+  "assert element not present": {
+    "path": "assertElementNotPresent.side",
+    "description": "this is a description for command assert element present"
+  },
+  "assert selected value": {
+    "path": "assertSelectValue.side",
+    "description": "this is a description for command assert selected value"
+  },
+  "assert not selected value": {
+    "path": "assertNotSelectValue.side",
+    "description": "this is a description for command assert not selected value"
+  },
+  "assert text": {
+    "path": "assertText.side",
+    "description": "this is a description for command assert text"
+  },
+  "assert not text": {
+    "path": "assertNotText.side",
+    "description": "this is a description for command assert not text"
+  },
+  "assert selected label": {
+    "path": "assertSelectLabel.side",
+    "description": "this is a description for command assert select label"
+  },
+  "assert title": {
+    "path": "assertTitle.side",
+    "description": "this is a description for command assert title"
+  },
+  "assert value": {
+    "path": "assertValue.side",
+    "description": "this is a description for command assert value"
+  },
+  "assert video": {
+    "path": "assertVideo.side",
+    "description": "this is a description for command assert video"
+  },
+  "assert video property": {
+    "path": "assertVideoProperty.side",
+    "description": "this is a description for command assert video property"
+  },
+  "execute script": {
+    "path": "echo.side",
+    "description": "this is a description for command execute script"
+  },
+  "verify": {
+    "path": "verify.side",
+    "description": "this is a description for command verify"
+  },
+  "verify checked": {
+    "path": "verifyChecked.side",
+    "description": "this is a description for command verify checked"
+  },
+  "verify editable": {
+    "path": "verifyEditable.side",
+    "description": "this is a description for command verify editable"
+  },
+  "verify element present": {
+    "path": "verifyElementPresent.side",
+    "description": "this is a description for command verify element present"
+  },
+  "verify element not present": {
+    "path": "verifyElementNotPresent.side",
+    "description": "this is a description for command verify element not present"
+  },
+  "verify not checked": {
+    "path": "verifyNotChecked.side",
+    "description": "this is a description for command verify not checked"
+  },
+  "verify not editable": {
+    "path": "verifyNotEditable.side",
+    "description": "this is a description for command verify not editable"
+  },
+  "verify not text": {
+    "path": "verifyNotText.side",
+    "description": "this is a description for command verify not text"
+  },
+  "verify text": {
+    "path": "verifyText.side",
+    "description": "this is a description for command verify text"
+  },
+  "verify value": {
+    "path": "verifyValue.side",
+    "description": "this is a description for command verify value"
+  },
+  "verify video": {
+    "path": "verifyVideo.side",
+    "description": "this is a description for command verify video"
+  },
+  "verify video property": {
+    "path": "verifyVideoProperty.side",
+    "description": "this is a description for command verify video property"
+  },
+  "execute async script": {
+    "path": "executeAsyncScript.side",
+    "description": "this is a description for command execute async script"
+  },
+  "run script": {
+    "path": "runScript.side",
+    "description": "this is a description for command run script"
+  },
+  "wait for element present": {
+    "path": "waitForElementPresent.side",
+    "description": "this is a description for command wait for element present"
+  },
+  "wait for element not present": {
+    "path": "waitForElementPresent.side",
+    "description": "this is a description for command wait for element not  present"
+  },
+  "send keys": {
+    "path": "sendKeys.side",
+    "description": "this is a description for command send keys"
+  },
+  "drag and drop to object": {
+    "path": "dragAndDropToObject.side",
+    "description": "this is a description for command drag and drop to object"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "f7035384-dad2-4b95-9cac-75eed392d174",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "34844101-5438-4fba-a754-1e656fc33187",
+      "name": "set Window Size",
+      "commands": [
+        {
+          "id": "9808510e-53e7-414d-9682-b5ab985c0e97",
+          "semantics": "打开窗口 <span></span>",
+          "command": "open",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+       {
+		"id": "399e02be-cb4a-4294-9858-ee3d2d3d53e8",
+		"semantics": "",
+		"command": "pause",
+		"target": "3000",
+		"targets": [],
+		"value": ""
+		},
+        {
+          "id": "b281e832-1abc-4f7a-91b0-532daf40d1cd",
+          "semantics": "设置窗口大小为 <span>1260x629</span>",
+          "command": "setWindowSize",
+          "target": "1260x629",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "8e4dd4d0-de23-443c-80ef-bad1d415b377",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["34844101-5438-4fba-a754-1e656fc33187"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

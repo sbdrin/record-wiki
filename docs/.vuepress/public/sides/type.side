@@ -1,0 +1,73 @@
+{
+  "id": "82288e0c-23e0-496e-b1bb-faa15b1976b5",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://element.eleme.cn/2.10/#/zh-CN/component/input",
+  "tests": [
+    {
+      "id": "4ed47be2-1c07-403c-9425-b5f76c9d543a",
+      "name": "type",
+      "commands": [
+        {
+          "id": "9290bd51-5a51-43a5-9ab2-92976c9bc64a",
+          "semantics": "打开窗口 <span>/2.10/#/zh-CN/component/input</span>",
+          "command": "open",
+          "target": "/2.10/#/zh-CN/component/input",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "01cc66e1-8fa7-4961-8370-7a56f5567835",
+          "semantics": "设置窗口大小为 <span>1536x864</span>",
+          "command": "setWindowSize",
+          "target": "1536x864",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5cb3c98f-8624-4d1c-8143-96d1e6ea2226",
+          "semantics": "点击 <span>编辑框文字'请输入内容'</span>",
+          "command": "click",
+          "target": "xpath=//input[@placeholder='请输入内容']",
+          "targets": [
+            ["xpath=//input[@placeholder='请输入内容']", "xpath:attributes"],
+            ["css=.hover .el-input__inner", "css:finder"],
+            ["xpath=//div/div/div/input", "xpath:position"],
+            [
+              "xpath=//div[@id='app']/div[2]/div/div/div/div/div[2]/section/div[2]/div/div/div/input",
+              "xpath:idRelative"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "61600e93-29a3-48b1-9c4d-5d79caab0984",
+          "semantics": "在 <span>编辑框文字'请输入内容'</span> 中输入<span>内容</span>",
+          "command": "type",
+          "target": "xpath=//input[@placeholder='请输入内容']",
+          "targets": [
+            ["xpath=//input[@placeholder='请输入内容']", "xpath:attributes"],
+            ["xpath=//div/div/div/input", "xpath:position"],
+            [
+              "xpath=//div[@id='app']/div[2]/div/div/div/div/div[2]/section/div[2]/div/div/div/input",
+              "xpath:idRelative"
+            ]
+          ],
+          "value": "内容"
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "55f740fa-3a83-48d7-b51c-a1262f61a491",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["4ed47be2-1c07-403c-9425-b5f76c9d543a"]
+    }
+  ],
+  "urls": ["https://element.eleme.cn/2.10/#/zh-CN/component/input"],
+  "plugins": []
+}

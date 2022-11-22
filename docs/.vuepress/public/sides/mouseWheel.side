@@ -1,0 +1,90 @@
+{
+  "id": "353ecdbc-8a9b-45fc-bc9c-e3df334af9f5",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://element.eleme.cn/2.10/#/zh-CN/component/layout",
+  "tests": [
+    {
+      "id": "8759011a-d7fa-4629-bb8d-b12a787fcdf1",
+      "name": "mouse wheel",
+      "commands": [
+        {
+          "id": "9102c75b-fc30-4741-b6c0-44e515538b87",
+          "semantics": "打开窗口 <span>/2.10/#/zh-CN/component/layout</span>",
+          "command": "open",
+          "target": "/2.10/#/zh-CN/component/layout",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "722f15f4-da74-4a4d-9207-8cd7013f1d10",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1c0c9ced-b8a0-4f85-a437-8cdbcbc78b1c",
+          "semantics": "鼠标在 <span>元素css=.page-component__scroll > <span>.el-scrollbar__wrap</span> 中滚动 </span><span>700px</span>",
+          "command": "mouseWheel",
+          "target": "css=.page-component__scroll > .el-scrollbar__wrap",
+          "targets": [
+            ["css=.page-component__scroll > .el-scrollbar__wrap", "css:finder"],
+            ["xpath=//body/div/div[2]/div/div", "xpath:position"],
+            ["xpath=//div[@id='app']/div[2]/div/div", "xpath:idRelative"]
+          ],
+          "value": "700"
+        },
+        {
+          "id": "9867ecd4-1f16-443f-b78b-c089de297995",
+          "semantics": "鼠标在 <span>元素css=.page-component__scroll > <span>.el-scrollbar__wrap</span> 中滚动 </span><span>2000px</span>",
+          "command": "mouseWheel",
+          "target": "css=.page-component__scroll > .el-scrollbar__wrap",
+          "targets": [
+            ["css=.page-component__scroll > .el-scrollbar__wrap", "css:finder"],
+            ["xpath=//body/div/div[2]/div/div", "xpath:position"],
+            ["xpath=//div[@id='app']/div[2]/div/div", "xpath:idRelative"]
+          ],
+          "value": "2000"
+        },
+        {
+          "id": "b13b9021-0e38-4cbf-979e-1eb6b599f290",
+          "semantics": "鼠标在 <span>元素css=.page-component__scroll > <span>.el-scrollbar__wrap</span> 中滚动 </span><span>2800px</span>",
+          "command": "mouseWheel",
+          "target": "css=.page-component__scroll > .el-scrollbar__wrap",
+          "targets": [
+            ["css=.page-component__scroll > .el-scrollbar__wrap", "css:finder"],
+            ["xpath=//body/div/div[2]/div/div", "xpath:position"],
+            ["xpath=//div[@id='app']/div[2]/div/div", "xpath:idRelative"]
+          ],
+          "value": "2800"
+        },
+        {
+          "id": "3e88846b-e9ca-404f-b6f4-7109708f6114",
+          "semantics": "鼠标在 <span>元素css=.page-component__scroll > <span>.el-scrollbar__wrap</span> 中滚动 </span><span>3600px</span>",
+          "command": "mouseWheel",
+          "target": "css=.page-component__scroll > .el-scrollbar__wrap",
+          "targets": [
+            ["css=.page-component__scroll > .el-scrollbar__wrap", "css:finder"],
+            ["xpath=//body/div/div[2]/div/div", "xpath:position"],
+            ["xpath=//div[@id='app']/div[2]/div/div", "xpath:idRelative"]
+          ],
+          "value": "3600"
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "9b9db955-8b48-44e5-9ab8-db843ee01b0b",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["8759011a-d7fa-4629-bb8d-b12a787fcdf1"]
+    }
+  ],
+  "urls": ["https://element.eleme.cn/2.10/#/zh-CN/component/layout"],
+  "plugins": []
+}

@@ -1,0 +1,71 @@
+{
+  "id": "7e588ea2-c5c0-41ec-8f1c-6a2681df5696",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "9753c916-92d2-4edb-8ced-3636c792a49a",
+      "name": "assert text",
+      "commands": [
+        {
+          "id": "570ee368-b3ab-4b53-860b-9e60f326f99c",
+          "semantics": "打开窗口 <span>/</span>",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "907303ca-7d19-4041-b60f-5845b61bf082",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cf45907e-94f2-43ea-ac69-d1058923e08f",
+          "semantics": "点击 <span>表单中的链接'换一换'</span>",
+          "command": "click",
+          "target": "xpath=//a[2]/span[contains(.,'换一换')]",
+          "targets": [
+            ["xpath=//a[2]/span[contains(.,'换一换')]", "xpath:innerText"],
+            ["css=.hot-refresh-text", "css:finder"],
+            ["xpath=//a[2]/span", "xpath:position"],
+            ["xpath=//a[@id='hotsearch-refresh-btn']/span", "xpath:idRelative"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "41e3983d-96f7-4a6c-ba89-9f4a17453c05",
+          "semantics": "断言 链接'换一换' <span>的文本为</span> <span>换一换</span>",
+          "command": "assertText",
+          "target": "xpath=//a[2]/span[contains(.,'换一换')]",
+          "targets": [],
+          "value": "换一换"
+        },
+        {
+          "id": "07c09eac-c862-493e-8de1-bf87fa6e91ec",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "8f3d5f7d-7b46-40ac-be6c-7c03b83b934b",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["9753c916-92d2-4edb-8ced-3636c792a49a"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

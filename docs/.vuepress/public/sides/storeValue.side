@@ -1,0 +1,68 @@
+{
+  "id": "29859870-293c-48be-b34e-4bb72207b807",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/s?ie=utf-8&f=8&tn=baidu&wd=%E5%89%8D%E7%AB%AF",
+  "tests": [
+    {
+      "id": "97e02186-ac27-4ccd-bd66-e3d637cc5f66",
+      "name": "store value",
+      "commands": [
+        {
+          "id": "103c7c25-3fcb-4433-bf9f-07fd0a602cfe",
+          "semantics": "打开窗口 <span>/s?ie=utf-8&f=8&tn=baidu&wd=%E5%89%8D%E7%AB%AF</span>",
+          "command": "open",
+          "target": "/s?ie=utf-8&f=8&tn=baidu&wd=%E5%89%8D%E7%AB%AF",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4b462976-f6b3-4231-b6e8-395080458744",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "97d44d6d-d49d-4c98-9953-c268e2aba63b",
+          "semantics": "",
+          "command": "storeValue",
+          "target": "id=kw",
+          "targets": [],
+          "value": "value"
+        },
+        {
+          "id": "baad59c9-6273-4c0d-b4ef-80ce515cf930",
+          "semantics": "",
+          "command": "echo",
+          "target": "${value}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "17ac50ac-6026-4bc4-876d-a70bfb118b2a",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "89edc91c-34f6-4d80-83a6-d0f690ddbf37",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["97e02186-ac27-4ccd-bd66-e3d637cc5f66"]
+    }
+  ],
+  "urls": [
+    "https://www.baidu.com/s?ie=utf-8&f=8&tn=baidu&wd=%E5%89%8D%E7%AB%AF"
+  ],
+  "plugins": []
+}

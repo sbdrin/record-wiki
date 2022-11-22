@@ -1,0 +1,50 @@
+{
+  "id": "e292f85d-8824-40b5-ab01-66d239511e71",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com",
+  "tests": [
+    {
+      "id": "b9df614b-f729-425a-a81c-d42409de95be",
+      "name": "run script",
+      "commands": [
+        {
+          "id": "d4e8a972-449f-49aa-992c-afe67b47b735",
+          "semantics": "打开窗口 <span>/</span>",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2c031394-a2b2-4a5c-92fb-a25d162cb385",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "54799cfa-ec68-47bd-b55a-783999adba68",
+          "semantics": "",
+          "command": "runScript",
+          "target": "let a = '这是一段打印的内容'; console.log(a)",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "df3e4332-9dcd-4511-8057-bcfc69c3e17e",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["b9df614b-f729-425a-a81c-d42409de95be"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

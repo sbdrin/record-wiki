@@ -1,0 +1,74 @@
+{
+  "id": "a6e6582c-3152-4f94-8332-a748af6eff69",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "f1e0aa1e-3729-4e5e-a4d3-eda253e663eb",
+      "name": "execute async script",
+      "commands": [
+        {
+          "id": "fb0d56cc-5558-4f84-bbca-b14fb64b9feb",
+          "semantics": "打开窗口 <span>/</span>",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f542570e-883e-49e1-95e4-7f255b02c493",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6b7c2d6a-d81c-414d-9f51-0569902cb2c9",
+          "semantics": "",
+          "command": "executeScript",
+          "target": "return  false",
+          "targets": [],
+          "value": "status"
+        },
+        {
+          "id": "023dc37a-ccd7-4457-806d-0088f361338e",
+          "semantics": "",
+          "command": "executeAsyncScript",
+          "target": "return new Promise((resolve, reject) => { setTimeout(() => { if (${status}) { resolve('success') } else { reject('error') } }, 1000) }).then(res => res).catch(err => err)",
+          "targets": [],
+          "value": "value"
+        },
+        {
+          "id": "15f70c86-5cc5-42a6-be8e-ba99d3e84cb1",
+          "semantics": "",
+          "command": "echo",
+          "target": "${value}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cd9400d0-c40c-4a50-91a1-965d75be9e70",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "99f77c21-14db-4fff-bab8-09726295b4cf",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["f1e0aa1e-3729-4e5e-a4d3-eda253e663eb"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

@@ -1,0 +1,80 @@
+{
+  "id": "d1fc62b0-deac-459b-b22e-b510e2390aef",
+  "version": "2.0",
+  "name": "",
+  "url": "https://element.eleme.cn/2.10/#/zh-CN/component/button",
+  "tests": [
+    {
+      "id": "777270cc-50dd-44f6-8cee-326a06198d65",
+      "name": "click",
+      "commands": [
+        {
+          "id": "cd843c9e-5764-4153-9d1e-d19093a00821",
+          "semantics": "打开窗口 <span>/2.10/#/zh-CN/component/button</span>",
+          "command": "open",
+          "target": "/2.10/#/zh-CN/component/button",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0c487558-e900-4a67-a0b7-d7719ac0e7a4",
+          "semantics": "设置窗口大小为 <span>1536x864</span>",
+          "command": "setWindowSize",
+          "target": "1536x864",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5f29ce0f-963f-4729-9efe-595ee6a860c7",
+          "semantics": "点击 <span>按钮'默认按钮'</span>",
+          "command": "click",
+          "target": "xpath=//button/span[contains(.,'默认按钮')]",
+          "targets": [
+            ["xpath=//button/span[contains(.,'默认按钮')]", "xpath:innerText"],
+            [
+              "css=.hover .el-row:nth-child(1) > .el-button--default > span",
+              "css:finder"
+            ],
+            ["xpath=//button/span", "xpath:position"],
+            [
+              "xpath=//div[@id='app']/div[2]/div/div/div/div/div[2]/section/div/div/div/div/button/span",
+              "xpath:idRelative"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "3dbd416e-8d84-4958-952a-df96e7343a45",
+          "semantics": "点击 <span>按钮'朴素按钮'</span>",
+          "command": "click",
+          "target": "xpath=//button/span[contains(.,'朴素按钮')]",
+          "targets": [
+            ["xpath=//button/span[contains(.,'朴素按钮')]", "xpath:innerText"],
+            [
+              "css=.hover .el-row:nth-child(2) > .el-button--default > span",
+              "css:finder"
+            ],
+            ["xpath=//div[2]/button/span", "xpath:position"],
+            [
+              "xpath=//div[@id='app']/div[2]/div/div/div/div/div[2]/section/div/div/div/div[2]/button/span",
+              "xpath:idRelative"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "376c73f2-9001-43fe-8b59-5d5c26887947",
+      "name": "",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["777270cc-50dd-44f6-8cee-326a06198d65"]
+    }
+  ],
+  "urls": ["https://element.eleme.cn/2.10/#/zh-CN/component/button"],
+  "plugins": []
+}

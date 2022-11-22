@@ -1,0 +1,107 @@
+{
+  "id": "cf2a9e40-514f-4aad-a473-eb037bb47ac4",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "137f20e6-5a12-4fda-a204-5b7dc037f9f3",
+      "name": "selectWindow",
+      "commands": [
+        {
+          "id": "8fe5a77d-88d3-4c96-85c0-98320aa616bc",
+          "semantics": "打开窗口 <span>/</span>",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a07ff5af-e8a1-4e2b-b0b0-8ae0ce69f989",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7dd96bf0-8ae8-45ba-851b-d5d0770194ce",
+          "semantics": "点击 <span>链接'图片'</span>",
+          "command": "click",
+          "target": "xpath=//div[3]/a[6][contains(.,'图片')]",
+          "targets": [
+            ["xpath=//div[3]/a[6][contains(.,'图片')]", "xpath:innerText"],
+            ["linkText=图片", "linkText"],
+            ["xpath=//a[@href='http://image.baidu.com/']", "xpath:href"],
+            ["xpath=//div[3]/a[6]", "xpath:position"],
+            ["xpath=//div[@id='s-top-left']/a[6]", "xpath:idRelative"]
+          ],
+          "value": "",
+          "opensWindow": true,
+          "windowHandleName": "win5748",
+          "windowTimeout": 8000
+        },
+        {
+          "id": "c6adec1d-7528-4e59-bc65-59260cc23980",
+          "semantics": "保存当前窗口为变量 <span>root</span>",
+          "command": "storeWindowHandle",
+          "target": "root",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f8750ef2-ddbb-4ebb-a361-e26b3f176120",
+          "semantics": "切换窗口为 <span>${win5748}</span>",
+          "command": "selectWindow",
+          "target": "handle=${win5748}",
+          "targets": [],
+          "value": ""
+        },
+         {
+          "id": "399e02be-cb4a-4294-9858-ee3d2d3d53e8",
+          "semantics": "",
+          "command": "pause",
+          "target": "3000",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d7848cb8-41a3-4189-adfa-9d62bdd55dd0",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5a3544a0-dddf-48c9-b6de-1c7cbe09b592",
+          "semantics": "切换窗口为 <span>${root}</span>",
+          "command": "selectWindow",
+          "target": "handle=${root}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "48e9d664-cf15-45b1-9ea4-7d8a71c1948e",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "70ee8645-3e81-4ab5-a9dc-3fbf3609c35b",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["137f20e6-5a12-4fda-a204-5b7dc037f9f3"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

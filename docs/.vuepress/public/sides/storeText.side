@@ -1,0 +1,66 @@
+{
+  "id": "4e9949ca-6efc-434b-8b21-61cd675f09c2",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "009c4073-c229-4981-a595-1e45b7884dff",
+      "name": "store text",
+      "commands": [
+        {
+          "id": "4b7c42dd-eed0-4d3e-bc23-93a59ba6e97e",
+          "semantics": "打开窗口 <span>/</span>",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a690d0d3-af0c-493e-8bf3-57c72f62e15b",
+          "semantics": "设置窗口大小为 <span>1536x864</span>",
+          "command": "setWindowSize",
+          "target": "1536x864",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5285d228-5ae8-4536-8b2b-2ba43571879f",
+          "semantics": "保存 元素css=.title-content-title <span>的文本值为变量</span> <span>value</span>",
+          "command": "storeText",
+          "target": "css=.title-content-title",
+          "targets": [],
+          "value": "value"
+        },
+        {
+          "id": "8567cf1e-db50-40b5-9a3e-60bfebce8426",
+          "semantics": "",
+          "command": "echo",
+          "target": "${value}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "137000bd-1d5b-40e1-89a5-51f942a102d0",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "f47db774-d5d3-4108-a133-d6d2ff0cd3ea",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["009c4073-c229-4981-a595-1e45b7884dff"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

@@ -1,0 +1,135 @@
+{
+  "id": "b9f0827b-73e8-4a92-bc81-23bf037d6947",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "34bffacb-17b8-4441-8d24-91f3c0a9aa1e",
+      "name": "wait",
+      "commands": [
+        {
+          "id": "40cdaa6d-049c-49ac-ae93-d728ab79c376",
+          "semantics": "打开窗口 <span>/</span>",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8a87125e-4664-4039-9c48-1c15348d324f",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "e3af6162-72b5-4d94-9fc9-e3921d918c86",
+          "semantics": "鼠标停留在 <span>编辑框按钮'百度一下'</span>",
+          "command": "mouseOver",
+          "target": "xpath=//input[@value='百度一下']",
+          "targets": [
+            ["xpath=//input[@value='百度一下']", "xpath:attributes"],
+            ["id=su", "id"],
+            ["css=#su", "css:finder"],
+            ["xpath=//span[2]/input", "xpath:position"],
+            ["xpath=//form[@id='form']/span[2]/input", "xpath:idRelative"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "e3da16c5-f1df-4d14-a3b0-586d1fe27993",
+          "semantics": "在 <span>编辑框ID='kw'</span> 中输入<span>前端</span>",
+          "command": "type",
+          "target": "xpath=//input[@id='kw']",
+          "targets": [
+            ["xpath=//input[@id='kw']", "xpath:attributes"],
+            ["id=kw", "id"],
+            ["name=wd", "name"],
+            ["css=#kw", "css:finder"],
+            ["xpath=//span/input", "xpath:position"],
+            ["xpath=//form[@id='form']/span/input", "xpath:idRelative"]
+          ],
+          "value": "前端"
+        },
+        {
+          "id": "78265701-6044-4d5b-9bb6-a6275bf22f40",
+          "semantics": "暂停 <span>1000毫秒</span>",
+          "command": "pause",
+          "target": "1000",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ff295199-708e-4891-83d5-6a8cd59ca832",
+          "semantics": "点击 <span>编辑框按钮'百度一下'</span>",
+          "command": "click",
+          "target": "xpath=//input[@value='百度一下']",
+          "targets": [
+            ["xpath=//input[@value='百度一下']", "xpath:attributes"],
+            ["id=su", "id"],
+            ["css=#su", "css:finder"],
+            ["xpath=//span[2]/input", "xpath:position"],
+            ["xpath=//form[@id='form']/span[2]/input", "xpath:idRelative"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "7d597f12-b13c-4681-afd8-4f6e26d8c476",
+          "semantics": "",
+          "command": "waitForElementPresent",
+          "target": "id=content_left",
+          "targets": [],
+          "value": "10000"
+        },
+        {
+          "id": "f42d012f-69eb-4632-9451-9733b4e5620a",
+          "semantics": "点击 <span>链接'图片'</span>",
+          "command": "click",
+          "target": "xpath=//div/a[contains(.,'图片')]",
+          "targets": [
+            ["xpath=//div/a[contains(.,'图片')]", "xpath:innerText"],
+            ["linkText=图片", "linkText"],
+            ["css=.s-tab-pic_p4Uej", "css:finder"],
+            [
+              "xpath=//a[@href='http://image.baidu.com/i?tn=baiduimage&ps=1&ct=201326592&lm=-1&cl=2&nc=1&ie=utf-8&dyTabStr=MCwzLDYsMiwxLDQsNSw4LDcsOQ%3D%3D&word=%E5%89%8D%E7%AB%AF']",
+              "xpath:href"
+            ],
+            ["xpath=//div[2]/div/div/a", "xpath:position"],
+            ["xpath=//div[@id='s_tab']/div/a", "xpath:idRelative"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "4681f826-c824-457c-b5b3-5fd54d9f82c4",
+          "semantics": "",
+          "command": "waitForElementNotPresent",
+          "target": "id=content_left",
+          "targets": [],
+          "value": "10000"
+        },
+        {
+          "id": "97dc3ef7-7678-401f-848f-912ae2d086e5",
+          "semantics": "",
+          "command": "waitForElementPresent",
+          "target": "id=content_left",
+          "targets": [],
+          "value": "10000"
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "2497097e-8c95-455e-94de-6cf221341977",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["34bffacb-17b8-4441-8d24-91f3c0a9aa1e"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

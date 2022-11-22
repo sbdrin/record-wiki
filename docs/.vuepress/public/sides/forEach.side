@@ -1,0 +1,82 @@
+{
+  "id": "b9cb3f6f-c7f7-4de5-bddc-a434d5a30757",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "ab25e415-b7d4-40dc-8532-72322b047080",
+      "name": "for Each",
+      "commands": [
+        {
+          "id": "17c2c78e-3a38-44f2-9b51-ee6676ab85fc",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a4342381-2667-4331-87f7-b173638d1194",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1536x864",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "04bdb448-7efa-4b38-830b-3dbde1e1950c",
+          "comment": "",
+          "command": "executeScript",
+          "target": "return [1,2,3,4,5]",
+          "targets": [],
+          "value": "list"
+        },
+        {
+          "id": "97f092aa-722c-4cfc-b40c-c3b8583f5891",
+          "comment": "",
+          "command": "forEach",
+          "target": "list",
+          "targets": [],
+          "value": "item"
+        },
+        {
+          "id": "b8c29778-2035-4a6f-afc9-055812c7646d",
+          "comment": "",
+          "command": "echo",
+          "target": "${item}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cb952adb-26ab-4fd5-ae37-70cd7125fe69",
+          "comment": "",
+          "command": "end",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "919be722-f440-492f-bd12-2cf726c51295",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "fa9834de-b81e-4331-95d5-92ee47af5adb",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["ab25e415-b7d4-40dc-8532-72322b047080"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

@@ -1,0 +1,101 @@
+@keyframes rtl-drawer-in {
+    0% {
+        transform: translate(100%);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+@keyframes rtl-drawer-out {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(100%);
+    }
+}
+
+// global
+.theme-container {
+    .page {
+        > .page-nav {
+            max-width: inherit;
+        }
+        h1,
+        h2,
+        h3 {
+            a:first-child {
+                display: none;
+            }
+        }
+    }
+}
+.theme-container {
+    .theme-default-content:not(.custom) {
+        margin: 0;
+        max-width: inherit;
+        padding: 5rem;
+        .action-button {
+            display: inline-block;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #3eaf7c;
+            padding: 0.8rem 1.6rem;
+            border-radius: 4px;
+            transition: background-color 0.1s ease;
+            box-sizing: border-box;
+            border-bottom: 1px solid #389d70;
+            text-decoration: none;
+            font-weight: 500;
+            &:hover {
+                background-color: #4abf8a;
+            }
+        }
+    }
+}
+//ui测试
+.ui-test-page-class,
+.ui-use-page-class {
+    .theme-default-content:not(.custom) {
+        h2 {
+            margin-top: -2rem;
+        }
+        p {
+            line-height: 35px;
+        }
+        ul {
+            li {
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+// 更新日志
+.log-page-class {
+    .theme-default-content:not(.custom) {
+        p.tip {
+            margin: 1.5rem 0 0;
+            border-radius: 5px;
+            padding: 0.5rem;
+            border: 1px solid #666;
+            background: #eee;
+        }
+        footer {
+            margin-top: 5rem;
+            background: #eee;
+            padding: 0.1rem 1rem 1rem;
+            p {
+                font-weight: bold;
+            }
+            pre {
+                border: 1px solid #666;
+                background-color: transparent;
+            }
+            span {
+                font-size: 14px;
+            }
+        }
+    }
+}

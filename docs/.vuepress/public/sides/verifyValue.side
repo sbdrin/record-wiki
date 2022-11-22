@@ -1,0 +1,88 @@
+{
+  "id": "9519620c-0da1-4c2d-8519-c1ca72fe58aa",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "e526f903-0e8d-44c9-b3d3-a09ef6a5b059",
+      "name": "verify value",
+      "commands": [
+        {
+          "id": "57e7038b-53f2-4848-b4f4-b0aefe7969e9",
+          "semantics": "打开窗口 <span>/</span>",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "080c0bd8-52ed-488a-9548-efb3d60d4e94",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d15b9d7f-a0b7-437f-9ba5-1176e59d3ffe",
+          "semantics": "点击 <span>编辑框ID='kw'</span>",
+          "command": "click",
+          "target": "xpath=//input[@id='kw']",
+          "targets": [
+            ["xpath=//input[@id='kw']", "xpath:attributes"],
+            ["id=kw", "id"],
+            ["name=wd", "name"],
+            ["css=#kw", "css:finder"],
+            ["xpath=//span/input", "xpath:position"],
+            ["xpath=//form[@id='form']/span/input", "xpath:idRelative"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "b7fc32a0-aaf2-4642-8cfa-eb2e6326a209",
+          "semantics": "在 <span>编辑框ID='kw'</span> 中输入<span>搜索内容</span>",
+          "command": "type",
+          "target": "xpath=//input[@id='kw']",
+          "targets": [
+            ["xpath=//input[@id='kw']", "xpath:attributes"],
+            ["id=kw", "id"],
+            ["name=wd", "name"],
+            ["css=#kw", "css:finder"],
+            ["xpath=//span/input", "xpath:position"],
+            ["xpath=//form[@id='form']/span/input", "xpath:idRelative"]
+          ],
+          "value": "搜索内容"
+        },
+        {
+          "id": "173063c3-5c86-4a7c-81f4-b20d751bb5ad",
+          "semantics": "校验 <span>\编辑框ID='kw'</span>的值为 <span>搜索内容</span>",
+          "command": "verifyValue",
+          "target": "xpath=//input[@id='kw']",
+          "targets": [],
+          "value": "搜索内容"
+        },
+        {
+          "id": "0097fff9-8e73-4b86-ad5c-6cf9b5377415",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "b4da4db1-2424-4cce-891a-be45d55be43f",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["e526f903-0e8d-44c9-b3d3-a09ef6a5b059"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

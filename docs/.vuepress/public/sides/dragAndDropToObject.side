@@ -1,0 +1,98 @@
+{
+  "id": "56337ef1-48bf-4f2b-8854-042ac2b1fd73",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://element.eleme.cn/2.10/#/zh-CN/component/tree",
+  "tests": [
+    {
+      "id": "db71452f-31db-427d-9cf2-870b296453b2",
+      "name": "drag",
+      "commands": [
+        {
+          "id": "f20fefea-d91b-4040-a67e-c4cf7e3340a3",
+          "semantics": "打开窗口 <span>/2.10/#/zh-CN/component/tree</span>",
+          "command": "open",
+          "target": "/2.10/#/zh-CN/component/tree",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "53cd3873-9852-4a1b-8518-14655399b36b",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ddf7e61b-3792-44f0-b305-c66c16d4845f",
+          "semantics": "鼠标在 <span>元素css=.page-component__scroll > <span>.el-scrollbar__wrap</span> 中滚动 </span><span>1700px</span>",
+          "command": "mouseWheel",
+          "target": "css=.page-component__scroll > .el-scrollbar__wrap",
+          "targets": [
+            ["css=.page-component__scroll > .el-scrollbar__wrap", "css:finder"],
+            ["xpath=//body/div/div[2]/div/div", "xpath:position"],
+            ["xpath=//div[@id='app']/div[2]/div/div", "xpath:idRelative"]
+          ],
+          "value": "1700"
+        },
+        {
+          "id": "7c802ca1-c55b-4887-b9ca-92f123743631",
+          "semantics": "鼠标在 <span>元素css=.page-component__scroll > <span>.el-scrollbar__wrap</span> 中滚动 </span><span>2849px</span>",
+          "command": "mouseWheel",
+          "target": "css=.page-component__scroll > .el-scrollbar__wrap",
+          "targets": [
+            ["css=.page-component__scroll > .el-scrollbar__wrap", "css:finder"],
+            ["xpath=//body/div/div[2]/div/div", "xpath:position"],
+            ["xpath=//div[@id='app']/div[2]/div/div", "xpath:idRelative"]
+          ],
+          "value": "2849"
+        },
+        {
+          "id": "7603fc3b-b450-4afd-9b28-fc23f01bb189",
+          "semantics": "鼠标在 <span>元素css=.page-component__scroll > <span>.el-scrollbar__wrap</span> 中滚动 </span><span>3287px</span>",
+          "command": "mouseWheel",
+          "target": "css=.page-component__scroll > .el-scrollbar__wrap",
+          "targets": [
+            ["css=.page-component__scroll > .el-scrollbar__wrap", "css:finder"],
+            ["xpath=//body/div/div[2]/div/div", "xpath:position"],
+            ["xpath=//div[@id='app']/div[2]/div/div", "xpath:idRelative"]
+          ],
+          "value": "3287"
+        },
+        {
+          "id": "22b8f942-4c8f-4c88-939e-456c54658c53",
+          "semantics": "鼠标在 <span>元素css=.page-component__scroll > <span>.el-scrollbar__wrap</span> 中滚动 </span><span>3700px</span>",
+          "command": "mouseWheel",
+          "target": "css=.page-component__scroll > .el-scrollbar__wrap",
+          "targets": [
+            ["css=.page-component__scroll > .el-scrollbar__wrap", "css:finder"],
+            ["xpath=//body/div/div[2]/div/div", "xpath:position"],
+            ["xpath=//div[@id='app']/div[2]/div/div", "xpath:idRelative"]
+          ],
+          "value": "3700"
+        },
+        {
+          "id": "cf289f8a-867f-4b18-9348-386feb639987",
+          "semantics": "",
+          "command": "dragAndDropToObject",
+          "target": "xpath=//div[10]/div/div/div/div/div[2]/div/div[2]/div[2][contains(.,'三级 1-1-2')]",
+          "targets": [],
+          "value": "xpath=//div[10]/div/div/div/div/div[2]/div/div[2]/div/div[contains(.,'三级 1-1-1')]"
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "c11397f0-2097-49bd-875b-276b5048d916",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["db71452f-31db-427d-9cf2-870b296453b2"]
+    }
+  ],
+  "urls": ["https://element.eleme.cn/2.10/#/zh-CN/component/tree"],
+  "plugins": []
+}

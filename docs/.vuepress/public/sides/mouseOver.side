@@ -1,0 +1,73 @@
+{
+  "id": "c75a0424-a15e-4381-8731-5e0e4d50e2ea",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://element.eleme.cn/2.10/#/zh-CN/component/dropdown",
+  "tests": [
+    {
+      "id": "1d0aba01-0406-492f-a8c8-da31d81e1e74",
+      "name": "mouseOver",
+      "commands": [
+        {
+          "id": "5a1a423f-c021-4f1d-a4fd-21b9d07ffc97",
+          "semantics": "打开窗口 <span>/2.10/#/zh-CN/component/dropdown</span>",
+          "command": "open",
+          "target": "/2.10/#/zh-CN/component/dropdown",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3d441dd8-5a14-4e97-9436-48b39e63f346",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d9a3055e-0354-4b71-8a05-80d9bc7f6dee",
+          "semantics": "鼠标停留在 <span>下拉项按钮'更多菜单'</span>",
+          "command": "mouseOver",
+          "target": "xpath=//div/button[contains(.,'更多菜单')]",
+          "targets": [
+            ["xpath=//div/button[contains(.,'更多菜单')]", "xpath:innerText"],
+            ["xpath=(//button[@type='button'])[2]", "xpath:attributes"],
+            ["css=.el-dropdown > .el-button", "css:finder"],
+            ["xpath=//div/div/div/button", "xpath:position"],
+            [
+              "xpath=//div[@id='app']/div[2]/div/div/div/div/div[2]/section/div[2]/div/div/div/button",
+              "xpath:idRelative"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "423a34f4-68db-42fe-8d36-833decc8ab03",
+          "semantics": "鼠标停留在 <span>下拉项按钮xpath=//button[2]/span/i</span>",
+          "command": "mouseOver",
+          "target": "xpath=//button[2]/span/i",
+          "targets": [
+            ["xpath=//button[2]/span/i", "xpath:position"],
+            [
+              "xpath=//div[@id='app']/div[2]/div/div/div/div/div[2]/section/div[2]/div/div/div[2]/div/button[2]/span/i",
+              "xpath:idRelative"
+            ]
+          ],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "45d80e84-97eb-4fb5-bbf3-1c59e1f2d51e",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["1d0aba01-0406-492f-a8c8-da31d81e1e74"]
+    }
+  ],
+  "urls": ["https://element.eleme.cn/2.10/#/zh-CN/component/dropdown"],
+  "plugins": []
+}

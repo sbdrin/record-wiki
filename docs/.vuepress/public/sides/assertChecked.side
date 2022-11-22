@@ -1,0 +1,97 @@
+{
+  "id": "803ac1e4-44fc-4aaa-bb6b-560afc5eb177",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.w3school.com.cn/tiy/t.asp?f=eg_html_input_checked",
+  "tests": [
+    {
+      "id": "9cbc74de-d461-44c4-afb3-6bbf32344b54",
+      "name": "assert checked",
+      "commands": [
+        {
+          "id": "12186620-d6c7-42be-8c6b-1c790c2f87b9",
+          "semantics": "打开窗口 <span>/tiy/t.asp?f=eg_html_input_checked</span>",
+          "command": "open",
+          "target": "/tiy/t.asp?f=eg_html_input_checked",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4920fe4d-6289-4abf-be22-fb1a0a82c610",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "76acfeea-20d7-49cb-ba58-7ff50bf7092c",
+          "semantics": "切换到内嵌页面，序号为 <span>0</span>",
+          "command": "selectFrame",
+          "target": "index=0",
+          "targets": [["index=0"]],
+          "value": ""
+        },
+        {
+          "id": "09c91e5a-6e65-4f03-b8dd-f1cd4e225729",
+          "semantics": "点击 <span>编辑框文字'Bike'</span>",
+          "command": "click",
+          "target": "xpath=//input[@value='Bike']",
+          "targets": [
+            ["xpath=//input[@value='Bike']", "xpath:attributes"],
+            ["name=vehicle", "name"],
+            ["xpath=//p/input", "xpath:position"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d23a6259-9c4a-4b37-8724-6cb6c9c6be08",
+          "semantics": "点击 <span>编辑框文字'Car'</span>",
+          "command": "click",
+          "target": "xpath=//input[@value='Car']",
+          "targets": [
+            ["xpath=//input[@value='Car']", "xpath:attributes"],
+            ["xpath=//p[2]/input", "xpath:position"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "7aad184e-e57a-4b36-9461-70654742v3da",
+          "semantics": "断言选择项 <span>编辑框文字'Bike'</span> 是否选中",
+          "command": "assertChecked",
+          "target": "xpath=//input[@value='Bike']",
+          "targets": [],
+          "value": ""
+        },
+         {
+          "id": "7aad184e-e57a-4b36-9461-7065474223da",
+          "semantics": "断言选择项 <span>编辑框文字'Car'</span> 是否选中",
+          "command": "assertChecked",
+          "target": "xpath=//input[@value='Car']",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "03c9b39b-4b88-404a-a824-3d3998f3711c",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "a9eb2875-3a34-4395-98d4-15c684479c78",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["9cbc74de-d461-44c4-afb3-6bbf32344b54"]
+    }
+  ],
+  "urls": ["https://www.w3school.com.cn/tiy/t.asp?f=eg_html_input_checked"],
+  "plugins": []
+}

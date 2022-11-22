@@ -1,0 +1,78 @@
+{
+  "id": "7c2b6ed5-93de-41f7-81e8-a3c083504bbc",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "b6761319-a538-4856-a3d8-4939aebb4ddd",
+      "name": "verify element present",
+      "commands": [
+        {
+          "id": "d56a1160-bd3e-49dc-a23f-c2e949a49b81",
+          "semantics": "打开窗口 <span>/</span>",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "90aaaa4b-3057-40a4-8223-63ac4d141f53",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3dbd416e-8d84-4958-952a-df96e7343a45",
+          "semantics": "点击 <span>编辑框文字'百度一下'</span>",
+          "command": "click",
+          "target": "xpath=//input[@value='百度一下']",
+          "targets": [
+            ["xpath=//input[@value='百度一下']", "xpath:attributes"],
+            ["id=su", "id"],
+            ["css=#su", "css:finder"],
+            ["xpath=//span[2]/input", "xpath:position"],
+            ["xpath=//form[@id='form']/span[2]/input", "xpath:idRelative"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "94c174eb-b0e6-4d7c-b688-f35531f9b029",
+          "semantics": "检查当前页面没有 <span>编辑框文字'百度一下'</span>",
+          "command": "verifyElementNotPresent",
+          "target": "xpath=//input[@value='百度一下']",
+          "targets": [
+            ["xpath=//input[@value='百度一下']", "xpath:attributes"],
+            ["id=su", "id"],
+            ["css=#su", "css:finder"],
+            ["xpath=//span[2]/input", "xpath:position"],
+            ["xpath=//form[@id='form']/span[2]/input", "xpath:idRelative"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "83c7211a-288f-433d-b04a-2a247f62f74e",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "c3132c6e-a6c0-42a1-a87e-201f79fd4bf9",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["b6761319-a538-4856-a3d8-4939aebb4ddd"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

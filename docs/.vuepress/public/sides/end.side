@@ -1,0 +1,74 @@
+{
+    "id": "0eb13b36-b123-452a-a3c4-7e54f83e53b5",
+    "version": "2.0",
+    "name": "测试项目",
+    "url": "https://www.baidu.com/",
+    "tests": [
+      {
+        "id": "118bceed-98f1-4536-b81b-5d704e7d1141",
+        "name": "end",
+        "commands": [
+          {
+            "id": "fc5dddd7-9ef4-40ef-9275-0a06a22a63d3",
+            "semantics": "打开窗口 <span>/</span>",
+            "command": "open",
+            "target": "/",
+            "targets": [],
+            "value": ""
+          },
+          {
+            "id": "1f887076-1d7f-4606-bb5c-511eec7d0831",
+            "semantics": "设置窗口大小为 <span>1800x900</span>",
+            "command": "setWindowSize",
+            "target": "1800x900",
+            "targets": [],
+            "value": ""
+          },
+          {
+            "id": "9d41cedf-3521-42b8-b4d7-7ba216434330",
+            "semantics": "",
+            "command": "if",
+            "target": "false",
+            "targets": [],
+            "value": ""
+          },
+          {
+          "id": "12726e2e-f2da-4030-ac52-a64ef5980d2a",
+          "semantics": "",
+          "command": "echo",
+          "target": "1",
+          "targets": [],
+          "value": ""
+        },
+          {
+            "id": "e4846931-9391-430d-a80f-75daeff872f8",
+            "semantics": "",
+            "command": "end",
+            "target": "",
+            "targets": [],
+            "value": ""
+          },{
+          "id": "f443fa93-a961-45f3-b75c-cb6f19ab393b",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        } 
+        ]
+      }
+    ],
+    "suites": [
+      {
+        "id": "559bc6df-8c43-457c-811a-9132860baefc",
+        "name": "Default Suite",
+        "persistSession": false,
+        "parallel": false,
+        "timeout": 300,
+        "tests": ["118bceed-98f1-4536-b81b-5d704e7d1141"]
+      }
+    ],
+    "urls": ["https://www.baidu.com/"],
+    "plugins": []
+  }
+  

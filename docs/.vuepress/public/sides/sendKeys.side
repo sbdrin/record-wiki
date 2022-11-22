@@ -1,0 +1,73 @@
+{
+  "id": "afeb7948-996b-4853-b35b-b7a232f51b7c",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "6731ee0e-a219-4aef-afec-62df5c2965e1",
+      "name": "send keys",
+      "commands": [
+        {
+          "id": "ef1ddd82-a438-4cd8-92cc-989bdd1a5e8f",
+          "semantics": "打开窗口 <span>/</span>",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6f95d2e1-9132-4a9a-b13b-3f0af337329e",
+          "semantics": "设置窗口大小为 <span>1536x864</span>",
+          "command": "setWindowSize",
+          "target": "1536x864",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "30bba0a3-d48f-4227-a2af-0ba2a653e93a",
+          "semantics": "在 <span>编辑框ID='kw'</span> 中输入<span>前端</span>",
+          "command": "type",
+          "target": "xpath=//input[@id='kw']",
+          "targets": [
+            ["xpath=//input[@id='kw']", "xpath:attributes"],
+            ["id=kw", "id"],
+            ["name=wd", "name"],
+            ["css=#kw", "css:finder"],
+            ["xpath=//span/input", "xpath:position"],
+            ["xpath=//form[@id='form']/span/input", "xpath:idRelative"]
+          ],
+          "value": "前端"
+        },
+        {
+          "id": "f3de620b-2e01-4a2f-9adb-dfc7522239db",
+          "semantics": "暂停 <span>2000毫秒</span>",
+          "command": "pause",
+          "target": "2000",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d20662e1-697d-4a2d-b57f-3fd2af42be6a",
+          "semantics": "在 <span>编辑框文字'百度一下'</span> 中 <span>按下键盘 </span> <span>${KEY_ENTER}</span>",
+          "command": "sendKeys",
+          "target": "xpath=//input[@value='百度一下']",
+          "targets": [],
+          "value": "${KEY_ENTER}"
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "788ac722-43fe-470f-906e-f205621e4207",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["6731ee0e-a219-4aef-afec-62df5c2965e1"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

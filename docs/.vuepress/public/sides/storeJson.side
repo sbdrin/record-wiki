@@ -1,0 +1,66 @@
+{
+  "id": "96d3b541-9c6d-4c06-93c9-f9d4367252db",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "a21694da-91cb-42eb-8a1b-492a1ab6b78c",
+      "name": "store json",
+      "commands": [
+        {
+          "id": "a25dbba6-ba47-400e-b010-f9c06627cadc",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b7c3d235-b734-4a74-a416-48a99a23b8bf",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1536x864",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2f992202-9cb0-4bdf-bbc7-803af1e33894",
+          "comment": "",
+          "command": "storeJson",
+          "target": "{\"name\":\"zhang\"}",
+          "targets": [],
+          "value": "jsonData"
+        },
+        {
+          "id": "de9258ad-89ec-42f4-abd9-78620c366846",
+          "comment": "",
+          "command": "runScript",
+          "target": "for(let key in ${jsonData}){ console.log(key,${jsonData}[key])}",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b5fd5d2b-ddc3-4316-972c-d86fa60f508d",
+          "comment": "",
+          "command": "echo",
+          "target": "${jsonData}.name",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "671dfebf-921b-4a52-9e41-d8380dfebb9a",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["a21694da-91cb-42eb-8a1b-492a1ab6b78c"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

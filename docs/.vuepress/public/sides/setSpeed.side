@@ -1,0 +1,149 @@
+{
+  "id": "e6f898fc-e396-4aa0-b710-a4671adcc611",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "47910b98-b3f6-4f8a-8582-94749f8ab55c",
+      "name": "set speed",
+      "commands": [
+        {
+          "id": "7f562255-a14c-4f57-99ff-a79cbb2717dc",
+          "semantics": "打开窗口 <span>/</span>",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5b4ef338-08c9-43ba-870d-3414832421cc",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+         {
+          "id": "a092e55d-74ec-4537-b732-dc375913460a",
+          "semantics": "点击 <span>表单中的链接'换一换'</span>",
+          "command": "click",
+          "target": "xpath=//a[2]/span[contains(.,'换一换')]",
+          "targets": [
+            ["xpath=//a[2]/span[contains(.,'换一换')]", "xpath:innerText"],
+            ["css=.hot-refresh-text", "css:finder"],
+            ["xpath=//div[3]/div/a[2]/span", "xpath:position"],
+            ["xpath=//a[@id='hotsearch-refresh-btn']/span", "xpath:idRelative"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "a092e55d-74ec-4537-b732-dcc7591v460a",
+          "semantics": "点击 <span>表单中的链接'换一换'</span>",
+          "command": "click",
+          "target": "xpath=//a[2]/span[contains(.,'换一换')]",
+          "targets": [
+            ["xpath=//a[2]/span[contains(.,'换一换')]", "xpath:innerText"],
+            ["css=.hot-refresh-text", "css:finder"],
+            ["xpath=//div[3]/div/a[2]/span", "xpath:position"],
+            ["xpath=//a[@id='hotsearch-refresh-btn']/span", "xpath:idRelative"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d15288d6-7e99-4efa-ac7c-03929dedae05",
+          "semantics": "",
+          "command": "setSpeed",
+          "target": "5000",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ea969115-cab6-4fcd-989d-7852c1a7bb0a",
+          "semantics": "点击 <span>表单中的链接'换一换'</span>",
+          "command": "click",
+          "target": "xpath=//a[2]/span[contains(.,'换一换')]",
+          "targets": [
+            ["xpath=//a[2]/span[contains(.,'换一换')]", "xpath:innerText"],
+            ["css=.hot-refresh-text", "css:finder"],
+            ["xpath=//div[3]/div/a[2]/span", "xpath:position"],
+            ["xpath=//a[@id='hotsearch-refresh-btn']/span", "xpath:idRelative"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "abe63553-3801-4df4-80b8-865213813532",
+          "semantics": "点击 <span>表单中的链接'换一换'</span>",
+          "command": "click",
+          "target": "xpath=//a[2]/span[contains(.,'换一换')]",
+          "targets": [
+            ["xpath=//a[2]/span[contains(.,'换一换')]", "xpath:innerText"],
+            ["css=.hot-refresh-text", "css:finder"],
+            ["xpath=//div[3]/div/a[2]/span", "xpath:position"],
+            ["xpath=//a[@id='hotsearch-refresh-btn']/span", "xpath:idRelative"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "098a1cf8-28a7-4599-9e28-572ed2b2d2ce",
+          "semantics": "点击 <span>表单中的链接'换一换'</span>",
+          "command": "click",
+          "target": "xpath=//a[2]/span[contains(.,'换一换')]",
+          "targets": [
+            ["xpath=//a[2]/span[contains(.,'换一换')]", "xpath:innerText"],
+            ["css=.hot-refresh-text", "css:finder"],
+            ["xpath=//div[3]/div/a[2]/span", "xpath:position"],
+            ["xpath=//a[@id='hotsearch-refresh-btn']/span", "xpath:idRelative"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "d15288d6-7e99-4efa-ac7c-03929d3dae05",
+          "semantics": "",
+          "command": "setSpeed",
+          "target": "10000",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0fa1bf36-32f0-4a59-ba37-e731b807a88d",
+          "semantics": "点击 <span>表单中的链接'换一换'</span>",
+          "command": "click",
+          "target": "xpath=//a[2]/span[contains(.,'换一换')]",
+          "targets": [
+            ["xpath=//a[2]/span[contains(.,'换一换')]", "xpath:innerText"],
+            ["css=.hot-refresh-text", "css:finder"],
+            ["xpath=//div[3]/div/a[2]/span", "xpath:position"],
+            ["xpath=//a[@id='hotsearch-refresh-btn']/span", "xpath:idRelative"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "0fa1bv31-32f0-4a59-ba37-e731b807a88d",
+          "semantics": "点击 <span>表单中的链接'换一换'</span>",
+          "command": "click",
+          "target": "xpath=//a[2]/span[contains(.,'换一换')]",
+          "targets": [
+            ["xpath=//a[2]/span[contains(.,'换一换')]", "xpath:innerText"],
+            ["css=.hot-refresh-text", "css:finder"],
+            ["xpath=//div[3]/div/a[2]/span", "xpath:position"],
+            ["xpath=//a[@id='hotsearch-refresh-btn']/span", "xpath:idRelative"]
+          ],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "8bf178d1-69ee-4d79-a548-d9a1267e674c",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["47910b98-b3f6-4f8a-8582-94749f8ab55c"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

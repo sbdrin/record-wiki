@@ -1,0 +1,69 @@
+{
+  "id": "99e9c700-6ad0-469d-9fbb-515a12a39c82",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://media.w3.org/2010/05/sintel/trailer.mp4",
+  "tests": [
+    {
+      "id": "af11fa70-f519-4350-b14b-44883292e492",
+      "name": "assert video",
+      "commands": [
+        {
+          "id": "86602f65-d0f4-4afa-b474-9e68257e018e",
+          "comment": "",
+          "command": "open",
+          "target": "/2010/05/sintel/trailer.mp4",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6b2023ce-0603-42bd-beca-ff61628afb7b",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1090685d-2a7e-411f-9798-fcefcbf7d942",
+          "comment": "",
+          "command": "click",
+          "target": "css=video",
+          "targets": [
+            ["css=video", "css:finder"],
+            ["xpath=//video", "xpath:position"]
+          ],
+          "value": ""
+        },
+        {
+          "id": "6c5cc635-b56d-46b4-a5a3-835a93cbc5bb",
+          "comment": "",
+          "command": "verifyVideo",
+          "target": "css=video",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3f015603-6195-46e4-8a85-dcdfca077542",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "ad483bcd-fd0c-454e-964a-70d4459d55f1",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["af11fa70-f519-4350-b14b-44883292e492"]
+    }
+  ],
+  "urls": ["https://media.w3.org/2010/05/sintel/trailer.mp4"],
+  "plugins": []
+}

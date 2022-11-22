@@ -1,0 +1,112 @@
+{
+  "id": "56d47afe-ef17-44c2-887a-d79fd0f803ac",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://www.baidu.com/",
+  "tests": [
+    {
+      "id": "4df014a2-e228-4445-9899-35e8505f088c",
+      "name": "if element present",
+      "commands": [
+        {
+          "id": "ba57c168-a72d-40c0-b42f-2e78120c5225",
+          "comment": "",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f7a1d925-b568-4940-bbb1-19d1cefd7b51",
+          "comment": "",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "452dc09f-2f45-4193-9c90-7afa7df8bf4f",
+          "comment": "",
+          "command": "ifElementPresent",
+          "target": "xpath=//input[@value='百度一下']",
+          "targets": [
+            ["xpath=//input[@value='百度一下']", "xpath:attributes"],
+            ["id=su", "id"],
+            ["css=#su", "css:finder"],
+            ["xpath=//span[2]/input", "xpath:position"],
+            ["xpath=//form[@id='form']/span[2]/input", "xpath:idRelative"]
+          ],
+          "value": "5000"
+        },
+        {
+          "id": "0cd70f07-3f6f-4d12-92fb-f9937b667541",
+          "comment": "",
+          "command": "echo",
+          "target": "11111",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fe16b03d-15f6-49ec-bf63-233345ea56a8",
+          "comment": "",
+          "command": "elseIf",
+          "target": "false",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "94b50f4a-ffa6-4ab8-88cf-bc9d8e63e943",
+          "comment": "",
+          "command": "echo",
+          "target": "22222",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a176c60c-1418-4bcf-8cc1-e800813d6584",
+          "comment": "",
+          "command": "else",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6e0b6bd6-3255-421c-8589-4326f8ecb849",
+          "comment": "",
+          "command": "echo",
+          "target": "33333",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "60171e89-9725-4f17-b5f8-06a4fdefd26b",
+          "comment": "",
+          "command": "end",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2b1c7c44-0060-4ed4-8e7a-6faf4813a308",
+          "comment": "",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "75243f91-86b2-41ad-a635-62423f6b1ecc",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["4df014a2-e228-4445-9899-35e8505f088c"]
+    }
+  ],
+  "urls": ["https://www.baidu.com/"],
+  "plugins": []
+}

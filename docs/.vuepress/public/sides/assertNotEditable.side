@@ -1,0 +1,120 @@
+{
+  "id": "05e401f8-d05e-422c-908a-c5251ad20741",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://element.eleme.cn/2.11/#/zh-CN/component/input",
+  "tests": [
+    {
+      "id": "152fcc5b-bcb1-4d64-8297-d1cbeaa36262",
+      "name": "assert editable",
+      "commands": [
+        {
+          "id": "ece1355e-633b-436c-b6a6-1c58b2559c02",
+          "semantics": "打开窗口 <span>/2.11/#/zh-CN/component/input</span>",
+          "command": "open",
+          "target": "/2.11/#/zh-CN/component/input",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "025e7c8b-0f11-4b56-bd68-54671c0a5b4b",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3f1f8a6e-1299-49fc-ab1c-cd52555a1880",
+          "semantics": "点击 <span>编辑框文字'请输入内容'</span>",
+          "command": "click",
+          "target": "xpath=//input[@placeholder='请输入内容']",
+          "targets": [
+            [
+              "xpath=//input[@placeholder='请输入内容']",
+              "xpath:attributes"
+            ],
+            [
+              "css=.hover .el-input__inner",
+              "css:finder"
+            ],
+            [
+              "xpath=//div/div/div/input",
+              "xpath:position"
+            ],
+            [
+              "xpath=//div[@id='app']/div[2]/div/div/div/div/div[2]/section/div[2]/div/div/div/input",
+              "xpath:idRelative"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "37457e01-2612-4c14-b147-bdcbfcb9426c",
+          "semantics": "点击 <span>编辑框文字'请输入内容'</span>",
+          "command": "click",
+          "target": "xpath=(//input[@placeholder='请输入内容'])[2]",
+          "targets": [
+            [
+              "xpath=(//input[@placeholder='请输入内容'])[2]",
+              "xpath:attributes"
+            ],
+            [
+              "css=.is-disabled > .el-input__inner",
+              "css:finder"
+            ],
+            [
+              "xpath=//div[3]/div/div/div/input",
+              "xpath:position"
+            ],
+            [
+              "xpath=//div[@id='app']/div[2]/div/div/div/div/div[2]/section/div[3]/div/div/div/input",
+              "xpath:idRelative"
+            ]
+          ],
+          "value": ""
+        },
+        {
+          "id": "fa88fabb-8454-4260-9627-bff3744b479d",
+          "semantics": "断言 <span>编辑框文字'请输入内容'</span> <span>是否不可编辑</span>",
+          "command": "assertNotEditable",
+          "target": "xpath=(//input[@placeholder='请输入内容'])[2]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8c212e32-21fa-4972-b54f-30298b77ce2b",
+          "semantics": "断言 <span>编辑框文字'请输入内容'</span> <span>是否不可编辑</span>",
+          "command": "assertNotEditable",
+          "target": "xpath=//input[@placeholder='请输入内容']",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6da71560-fc71-4f32-8d43-a57ce188dcea",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "205df762-b2da-4e89-80c6-1919697ce9f7",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "152fcc5b-bcb1-4d64-8297-d1cbeaa36262"
+      ]
+    }
+  ],
+  "urls": [
+    "https://element.eleme.cn/2.11/#/zh-CN/component/input"
+  ],
+  "plugins": []
+}

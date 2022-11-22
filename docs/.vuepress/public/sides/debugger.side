@@ -1,0 +1,58 @@
+{
+  "id": "a3fc89ec-f675-4492-ba63-77dc9e795cd5",
+  "version": "2.0",
+  "name": "测试项目",
+  "url": "https://element.eleme.cn/2.10/#/zh-CN/component/layout",
+  "tests": [
+    {
+      "id": "e08b16f8-2960-42df-8c92-3685987a41be",
+      "name": "debugger",
+      "commands": [
+        {
+          "id": "207b3e7c-7d59-4c7d-ad87-075d47265438",
+          "semantics": "打开窗口 <span>/2.10/#/zh-CN/component/layout</span>",
+          "command": "open",
+          "target": "/2.10/#/zh-CN/component/layout",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ade12a52-0f6c-4db0-9f9e-8258d67797c6",
+          "semantics": "设置窗口大小为 <span>1800x900</span>",
+          "command": "setWindowSize",
+          "target": "1800x900",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "457663be-2003-4fa0-847b-9134cba4fb95",
+          "semantics": "",
+          "command": "debugger",
+          "target": "",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8c3cdff0-f0d8-41de-a052-9684e0bdf748",
+          "semantics": "关闭窗口",
+          "command": "close",
+          "target": "",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "238f2872-5bb2-42ff-a1df-60a99313e026",
+      "name": "Default Suite",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": ["e08b16f8-2960-42df-8c92-3685987a41be"]
+    }
+  ],
+  "urls": ["https://element.eleme.cn/2.10/#/zh-CN/component/layout"],
+  "plugins": []
+}
